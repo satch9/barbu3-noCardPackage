@@ -1,0 +1,198 @@
+.register-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.register-card a {
+    text-decoration: none;
+    color: var(--color-scheme);
+}
+
+.register-card .column {
+    padding: 4rem;
+}
+
+.register-card .column:last-child {
+    padding: 4rem;
+    width: 110%;
+    height: 110%;
+}
+
+.register-card .column:last-child {
+    background: url('../../assets/bg3.jpg') center/contain no-repeat;
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.register-card .column:last-child::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(236, 234, 230, 0.274);
+}
+
+.register-card .column:last-child h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: black 2px 5px;
+}
+
+.register-card .column:last-child p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #080505;
+    text-shadow: white 1px 2px;
+    text-align: center;
+    width: 80%;
+}
+
+.register-card .column:last-child a {
+    z-index: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #0037ff;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.register-card .column:last-child a:hover {
+    background-color: #0037ff;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.form-element {
+    width: 100%;
+    border: none;
+    background-color: white;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+}
+
+.form-element:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0037ff;
+}
+
+input[type="checkbox"] {
+    accent-color: #0037ff;
+    width: 16px;
+    height: 16px;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+form>* {
+    margin-bottom: 0.4rem;
+}
+
+form button {
+    background-color: #0037ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+form button:active {
+    scale: .95;
+    background-color: darken(#0037ff, 10%);
+}
+
+.register-form button:last-of-type {
+    display: none
+}
+
+.form-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .register-card {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .register-card .column:last-child {
+        display: none;
+    }
+
+    form>* {
+        margin-bottom: .8rem;
+    }
+
+    form button {
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all .3s;
+    }
+
+    form button:last-of-type {
+        display: block;
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #0037ff;
+        color: black;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    form button:last-of-type:hover {
+        background-color: #0037ff;
+        color: white;
+        font-weight: 600;
+    }
+
+
+    .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

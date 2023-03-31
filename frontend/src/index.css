@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: #0037ff;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: .8rem;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  width: 60%;
+  background-color: #0037ff;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+  z-index: -1;
+}

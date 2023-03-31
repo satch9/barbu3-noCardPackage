@@ -1,0 +1,87 @@
+.primary {
+    background-color: #0037ff;
+    border: 2px solid #0037ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s;
+    width: 149px;
+}
+
+.primary:hover {
+    background-color: white;
+    border: 2px solid #0037ff;
+    color: #0037ff;
+}
+
+.primary:active {
+    scale: .95;
+    background-color: darken(#0037ff, 10%);
+}
+
+.secondary {
+    background-color: white;
+    border: 2px solid #0037ff;
+    color: #0037ff;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    
+}
+
+.secondary:hover {
+    background-color: #0037ff;
+    color: white;
+}
+
+.secondary .button-title {
+    text-align: center;
+}
+
+.count {
+    position: relative;
+    top: -20px;
+    left: -50px;
+    width: 30px;
+    height: 20px;
+    line-height: 5px;
+    background-color: red;
+    border-radius: 50px;
+    color: #fff;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary:active {
+    scale: .95;
+    background-color: darken(#0037ff, 10%);
+}
+
+.tertiary {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.tertiary:hover {
+    background-color: #ddd;
+    color: #0037ff;
+}
